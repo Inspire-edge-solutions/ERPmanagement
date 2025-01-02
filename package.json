@@ -1,0 +1,21 @@
+{
+  "name": "erp",
+  "version": "1.0.0",
+  "main": "user.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "serverless-offline": "^14.4.0"
+  },
+  "dependencies": {
+    "aws": "^0.0.3-2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.12.0",
+    "nodemailer": "^6.9.16"
+  }
+}

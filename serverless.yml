@@ -1,0 +1,29 @@
+service: erp-project-1
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-south-1
+
+functions:
+  user:
+    handler: user.handler
+    events:
+      - http:
+          path: user
+          method: any
+  institution:
+    handler: institution.handler
+    events:
+      - http:
+          path: institution
+          method: any
+  users:
+    handler: users.handler
+    events:
+      - http:
+          path: users
+          method: any
+
+plugins:
+  - serverless-offline
